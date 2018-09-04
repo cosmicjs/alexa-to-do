@@ -1,5 +1,5 @@
 # Alexa To Do Skill
-An Alexa skill that allows you to add and remove todo items from your [Cosmic JS](https://cosmicjs.com) Bucket.
+An Alexa skill that allows you to add and remove to do items from your [Cosmic JS](https://cosmicjs.com) Bucket.
 
 ### Getting Started
 1. Install this repo:
