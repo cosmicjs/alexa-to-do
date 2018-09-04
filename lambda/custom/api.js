@@ -1,11 +1,9 @@
-const Cosmic = require('cosmicjs')();
-
-const config = require('./config');
-
 /**
  * Retrieve all chores from the bucket
  */
 const getChores = async function() {
+  const Cosmic = require('cosmicjs')();
+  const config = require('./config');
   const choreBucket = Cosmic.bucket({
     slug: config.BUCKET_SLUG,
     read: config.API_READ_ACCESS_KEY,
@@ -35,6 +33,8 @@ const getChores = async function() {
  * Add a chore to the bucket
  */
 const addChore = async function(chore) {
+  const Cosmic = require('cosmicjs')();
+  const config = require('./config');
   const choreBucket = Cosmic.bucket({
     slug: config.BUCKET_SLUG,
     read: config.API_READ_ACCESS_KEY,
@@ -61,6 +61,8 @@ const addChore = async function(chore) {
  * Remove a chore from the bucket
  */
 const removeChore = async function(chore) {
+  const Cosmic = require('cosmicjs')();
+  const config = require('./config');
   const choreBucket = Cosmic.bucket({
     slug: config.BUCKET_SLUG,
     read: config.API_READ_ACCESS_KEY,
